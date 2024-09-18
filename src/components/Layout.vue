@@ -1,5 +1,5 @@
 <template>
-  <a-layout>
+  <a-layout style="min-height: 100vh;">
     <a-layout-sider collapsible>
       <div class="logo" />
       <a-menu theme="dark" mode="inline" :selectedKeys="[selectedKey]">
@@ -12,8 +12,10 @@
       </a-menu>
     </a-layout-sider>
     <a-layout>
-      <a-layout-header style="background: #fff; padding: 0" />
-      <a-layout-content style="margin: 24px 16px; padding: 24px; background: #fff">
+      <a-layout-header style="background: #fff; padding: 0 32px; text-align: right;" >
+        顶部
+      </a-layout-header>
+      <a-layout-content style="margin: 16px; padding: 32px; background: #fff">
         <router-view />
       </a-layout-content>
     </a-layout>
